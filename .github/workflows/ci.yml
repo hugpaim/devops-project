@@ -17,5 +17,15 @@ jobs:
     - name: Run containers
       run: docker compose up -d
 
+    - name: Wait for service
+      run: |
+        for i in {1..15}; do
+          curl -f http://localhost/health && exit 0
+          echo "Waiting for service..."
+          sleep 3
+        done
+        echo "Service failed to start"
+        exit 1
+
     - name: Health check
       run: curl -f http://localhost/health
