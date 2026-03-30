@@ -1,0 +1,21 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Build containers
+      run: docker-compose build
+
+    - name: Run containers
+      run: docker-compose up -d
+
+    - name: Health check
+      run: curl -f http://localhost/health
