@@ -9,6 +9,7 @@ A full DevOps stack demonstrating infrastructure patterns — containerized appl
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![CI](https://github.com/hugpaim/devops-lab/actions/workflows/ci.yml/badge.svg)
 
 ---
 
