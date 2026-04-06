@@ -3,6 +3,7 @@
 A full DevOps stack demonstrating infrastructure patterns — containerized application, reverse proxy, CI/CD pipeline, monitoring, and local orchestration.
 
 Docker · Docker Compose · Nginx · GitHub Actions · Prometheus · Grafana · Linux
+![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 
 ---
 
